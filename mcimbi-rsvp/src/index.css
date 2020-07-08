@@ -1,0 +1,136 @@
+body {
+  background-color: white;
+}
+.Events-h3{
+  cursor: pointer;
+}
+/* Durban July */
+.Durban-july{
+  margin: 0px 135vh 0px 5vh;
+  /* background-color: lightblue; */
+}
+.Durban-july>h4{
+  margin: 0px 0px 10px 16vh;
+}
+.Durban-discription{
+  margin-left: 10vh;
+  cursor: pointer;
+}
+/* .Durban-discription:hover{
+  color: blue;
+  cursor: pointer;
+} */
+.Image-1 {
+  height: 20vh;
+  width: 25vh;
+}
+.Image-2 {
+  height: 25vh;
+  width: 50vh;
+}
+.Image-3 {
+  height: 20vh;
+  width: 25vh;
+}
+/* FreeState Wine show */
+.Freestate-wine-show {
+  margin: -30vh 64vh 0px 60vh;
+  /* background-color: pink; */
+}
+.Freestate-wine-show>h4 {
+  margin-left: 20vh;
+}
+.Wine-1{
+  height: 20vh;
+  width: 30vh;
+}
+.Wine-2{
+  width: 15vh;
+  height: 20vh;
+}
+.wine-3{
+  width: 65vh;
+}
+.wine-4 {
+  height: 20vh;
+  width: 20vh;
+}
+/* Afropunk */
+.Afropunk{
+  margin: -80vh 0px 0px 130vh;
+}
+.Afropunk>h4{
+  text-align: center;
+}
+.Afro-1{
+  height: 40vh;
+  width: 60vh;
+}
+.Afro-2{
+  height: 20vh;
+  width: 30vh;
+}
+.Afro-3{
+  height: 20vh;
+  width: 30vh;
+}
+/* Mother City Querr Project */
+.Mother-City-Queer-Project>h4{
+  margin-left: 15vh;
+}
+.mcqp-1{
+  width: 50vh;
+  height: 20vh;
+}
+.mcqp-2{
+  width: 60vh;
+}
+/* Cherry picking festival */
+.Cherry-picking-festival{
+  margin: -60vh 0px 0vh 65vh;
+}
+.Cherry-picking-festival>h4{
+  margin-left: 40vh;
+}
+.cherry-1{
+  width: 70vh;
+}
+.cherry-2 {
+  width: 44vh;
+}
+.cherry-3 {
+  width: 80vh;
+  margin-left: 18vh;
+}
+/* Form */
+.Durban-form{
+  margin: 0px 135vh 0px 5vh;
+  background-color: inherit;
+  height: 50vh;
+  /* height: 10vh; */
+}
+.form>p{
+  margin: 10px 0px 0px 50px;
+}
+.Form-container{
+  margin: 10vh 0px 0px 12vh;
+}
+.Submit {
+  margin: 5vh 0px 0px 20vh;
+}
+
+.Freestate-form{
+  margin: -30vh 64vh 0px 60vh;
+  height: 49.9vh;
+}
+.Afropunk-form{
+  margin: -70vh 0px 0px 130vh;
+  height: 58vh;
+}
+.Mother-city-form{
+  height: 80vh;
+}
+
+.Cherry-form{
+  margin: -50vh 0px 0vh 100vh;
+}
