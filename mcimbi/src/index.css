@@ -11,6 +11,9 @@ body {
 }
 .Durban-july>h4{
   margin: 0px 0px 10px 16vh;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+
 }
 .Durban-discription{
   margin-left: 10vh;
@@ -39,6 +42,8 @@ body {
 }
 .Freestate-wine-show>h4 {
   margin-left: 20vh;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
 }
 .Wine-1{
   height: 20vh;
@@ -61,6 +66,9 @@ body {
 }
 .Afropunk>h4{
   text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+
 }
 .Afro-1{
   height: 40vh;
@@ -77,6 +85,8 @@ body {
 /* Mother City Querr Project */
 .Mother-City-Queer-Project>h4{
   margin-left: 15vh;
+  font-family: 'Oswald', sans-serif;
+
 }
 .mcqp-1{
   width: 50vh;
@@ -91,6 +101,9 @@ body {
 }
 .Cherry-picking-festival>h4{
   margin-left: 40vh;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+
 }
 .cherry-1{
   width: 70vh;
