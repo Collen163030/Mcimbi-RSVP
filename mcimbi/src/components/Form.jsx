@@ -16,6 +16,13 @@ class Form extends Component {
         // window.location.reload();
 
     }
+    onChange = (e) => {
+        this.setState({
+            name: e.target.value,
+            surname: e.target.value,
+            email: e.target.value
+        })
+    }
 
     handleBack = () => {
         window.location.reload();
@@ -31,15 +38,15 @@ class Form extends Component {
                 <form className="Form-container" >
                     <br />
                     <input type="text" name="name" id="name" placeholder="First Name"
-                        onChange={(e) => this.setState({ name: e.target.value })}
+                        onChange={this.onChange}
                     />
                     <br />
                     <input type="text" name="surname" id="surname" placeholder="Surname"
-                        onChange={(e) => this.setState({ surname: e.target.value })}
+                        onChange={this.onChange}
                     />
                     <br />
                     <input type="email" name="email" id="email" placeholder="email"
-                        onChange={(e) => this.setState({ email: e.target.value })}
+                        onChange={this.onChange}
                     />
                     <br />
                 </form>
