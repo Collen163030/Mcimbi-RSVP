@@ -136,6 +136,9 @@ ul{
   font-family: 'Oswald', sans-serif;
 
 }
+.Mother-discription{
+  margin-left: 10vh;
+}
 .mcqp-1{
   width: 50vh;
   height: 20vh;
@@ -152,6 +155,9 @@ ul{
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 
+}
+.Cherry-discription{
+  text-align: center;
 }
 .cherry-1{
   width: 70vh;

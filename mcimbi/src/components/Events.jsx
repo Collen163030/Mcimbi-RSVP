@@ -107,7 +107,7 @@ class Events extends Component {
                                         alt="afro" className="Afro-2" />
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRgNaM02tcvwI4t3fZLmpP99iZYsrvsvf7fGw&usqp=CAU"
                                         alt="afr" className="Afro-3" />
-                                        <p className="Afro-description">30 Dec - 31 Dec click for bookings</p>
+                                    <p className="Afro-description">30 Dec - 31 Dec click for bookings</p>
                                 </div>
                             </div> : <div className="Afropunk-form"><Form /></div>}
                         {motherCityInfo === false ?
@@ -119,6 +119,7 @@ class Events extends Component {
                                     <br />
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWyFNxgNuC7i9t3BJ40-5cLKgQTAkZn0c9jg&usqp=CAU"
                                         alt="gay parade" className="mcqp-2" />
+                                    <p className="Mother-discription">The whole December Cape Town click for bookings</p>
                                 </div>
                             </div> : <div className="Mother-city-form"><Form /></div>}
                         {cherryInfo === false ?
@@ -132,6 +133,7 @@ class Events extends Component {
                                     <br />
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQlrvFZmlBKYj_MnGmTZe1qVSzMafyyJ_xl1w&usqp=CAU"
                                         alt="logo" className="cherry-3" />
+                                        <p className="Cherry-discription">The whole of November FreeState click for bookings</p>
                                 </div>
                             </div> : <div className="Cherry-form"><Form /></div>}
                     </div>
