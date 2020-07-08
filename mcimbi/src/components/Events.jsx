@@ -6,7 +6,7 @@ class Events extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isToggle: true,
+            isToggle: false,
             durbanInfo: false,
             freeStateInfo: false,
             afropunkInfo: false,
@@ -50,8 +50,20 @@ class Events extends Component {
     render() {
         const { isToggle, durbanInfo, cherryInfo, freeStateInfo, afropunkInfo, motherCityInfo } = this.state;
         return (
-            <div>
-                <h3 className="Events-h3" onClick={() => this.displayEvents()}>Events</h3>
+            <div className="Container">
+                <div className="Nav-bar">
+                    <ul>
+                        <li>
+                            <a href="#" onClick={() => this.displayEvents()}>Events</a>
+                        </li>
+                        <li>
+                            <a href="https://mavetane.github.io/">Developer</a>
+                        </li>
+                        <li>
+                            <a href="https://thecodingground.com">Institute</a>
+                        </li>
+                    </ul>
+                </div>
                 {isToggle ?
                     <div className="Events">
                         {durbanInfo === false ?

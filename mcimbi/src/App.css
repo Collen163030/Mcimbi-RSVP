@@ -5,10 +5,13 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  width: 194vh;
+  height: 10vh;
+  margin-top: -10px;
 }
 
