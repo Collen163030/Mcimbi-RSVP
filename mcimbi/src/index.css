@@ -6,6 +6,7 @@ body {
 .Container{
   background-color: white;
   width: 194vh;
+  height: auto;
 }
 /* Nav bar */
 .Nav-bar{
@@ -57,7 +58,7 @@ ul{
 
 }
 .Durban-discription{
-  margin-left: 10vh;
+  text-align: center;
   cursor: pointer;
 }
 /* .Durban-discription:hover{
@@ -86,6 +87,9 @@ ul{
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 }
+.Freestate-discription{
+  text-align: center;
+}
 .Wine-1{
   height: 20vh;
   width: 30vh;
@@ -110,6 +114,9 @@ ul{
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 
+}
+.Afro-description{
+  text-align: center;
 }
 .Afro-1{
   height: 40vh;

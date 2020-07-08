@@ -77,7 +77,7 @@ class Events extends Component {
                                     <br />
                                     <img src="https://regalevents.co.za/wp-content/uploads/2018/12/The-Glenlivet-Jazz-Town-correct-Durban-July-4-870x560.jpg.webp"
                                         alt="The Glenlivet jazztown" className="Image-2" />
-                                    <p className="Durban-discription">6 July 2020 Click here for bookings</p>
+                                    <p className="Durban-discription">6 July 2020 click for bookings</p>
                                 </div>
                             </div> : <div className="Durban-form"><Form /></div>}
 
@@ -94,6 +94,7 @@ class Events extends Component {
                                     <br />
                                     <img src="https://www.sa-wine-farms.co.za/info/articles/2503/images/top_pic.jpg"
                                         alt="gallery" className="wine-3" />
+                                    <p className="Freestate-discription">31 July - 1 August click for bookings</p>
                                 </div>
                             </div> : <div className="Freestate-form"><Form /></div>}
                         {afropunkInfo === false ?
@@ -106,6 +107,7 @@ class Events extends Component {
                                         alt="afro" className="Afro-2" />
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRgNaM02tcvwI4t3fZLmpP99iZYsrvsvf7fGw&usqp=CAU"
                                         alt="afr" className="Afro-3" />
+                                        <p className="Afro-description">30 Dec - 31 Dec click for bookings</p>
                                 </div>
                             </div> : <div className="Afropunk-form"><Form /></div>}
                         {motherCityInfo === false ?
