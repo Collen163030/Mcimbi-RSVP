@@ -11,12 +11,9 @@ class Form extends Component {
             surname: ""
         }
     }
-    onSubmit = (e) => {
-        if([e.target.name] === ""){
-            alert("Input field is required")
-        }else{
-            console.log("I'm state", this.state)
-        }
+    onSubmit = () => {
+        
+        console.log("I'm state", this.state)
     }
     onChange = (e) => {
         
