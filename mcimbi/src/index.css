@@ -21,7 +21,6 @@ a{
   transition-duration: 0.5s;
   font-size: 30px;
   font-weight: bold;
-  /* font-family: 'Alata', sans-serif; */
 }
 a:hover{
   color: rgb(189, 169, 169);
@@ -49,7 +48,9 @@ ul{
 /* Durban July */
 .Durban-july{
   margin: 0px 135vh 0px 5vh;
-  /* background-color: lightblue; */
+}
+.Durban-july:hover{
+  cursor: pointer;
 }
 .Durban-july>h4{
   margin: 0px 0px 10px 16vh;
@@ -61,10 +62,7 @@ ul{
   text-align: center;
   cursor: pointer;
 }
-/* .Durban-discription:hover{
-  color: blue;
-  cursor: pointer;
-} */
+
 .Image-1 {
   height: 20vh;
   width: 25vh;
@@ -81,6 +79,9 @@ ul{
 .Freestate-wine-show {
   margin: -30vh 64vh 0px 60vh;
   /* background-color: pink; */
+}
+.Freestate-wine-show:hover{
+  cursor: pointer;
 }
 .Freestate-wine-show>h4 {
   margin-left: 20vh;
@@ -109,6 +110,9 @@ ul{
 .Afropunk{
   margin: -80vh 0px 0px 130vh;
 }
+.Afropunk:hover{
+  cursor: pointer;
+}
 .Afropunk>h4{
   text-align: center;
   font-family: 'Oswald', sans-serif;
@@ -136,6 +140,9 @@ ul{
   font-family: 'Oswald', sans-serif;
 
 }
+.Mother-City-Queer-Project:hover{
+  cursor: pointer;
+}
 .Mother-discription{
   margin-left: 10vh;
 }
@@ -149,6 +156,9 @@ ul{
 /* Cherry picking festival */
 .Cherry-picking-festival{
   margin: -60vh 0px 0vh 65vh;
+}
+.Cherry-picking-festival{
+  cursor: pointer;
 }
 .Cherry-picking-festival>h4{
   margin-left: 40vh;

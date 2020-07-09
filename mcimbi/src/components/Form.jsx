@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import Events from './Events'
 import PropTypes from 'prop-types';
 
 class Form extends Component {
@@ -7,14 +8,12 @@ class Form extends Component {
         this.state = {
             email: "",
             name: "",
-            surname: "",
+            surname: ""
         }
     }
     onSubmit = () => {
 
         console.log("I'm state", this.state)
-        // window.location.reload();
-
     }
     onChange = (e) => {
         this.setState({
