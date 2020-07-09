@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import Events from './Events'
-import PropTypes from 'prop-types';
+
 
 class Form extends Component {
     constructor(props) {

@@ -12,6 +12,10 @@ export default function (state = initialState, action) {
                 items: action.payload
             };
         }
+        case NEW_POST: {
+            const newState = {items: [...state.items, {name: action.payload.name, id: action.payload.id}]}
+            return newState;
+        }
         default:
             return state;
     }

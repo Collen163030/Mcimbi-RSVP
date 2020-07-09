@@ -1,23 +1,37 @@
 import axios from 'axios';
-import FETCH_POSTS from '../actions/types';
+import { FETCH_POSTS, NEW_POST } from '../actions/types';
 
-export  const getBookings = () => {
+export const getBookings = () => {
     return async dispatch => {
         try {
 
             const data = await axios.get("https://jsonplaceholder.typicode.com/users");
             const bookings = await data;
 
-            console.log("I'm data", bookings)
             dispatch({
-                type: FETCH_POSTS,
+                type: "FETCH_POSTS",
                 payload: [...bookings.data]
             })
         }
-        catch(e){
+        catch (e) {
             console.log(e)
         }
     }
 }
 
-export default {getBookings}
+export const addBooking = (name, email) => {
+    return async dispatch => {
+        try {
+            const data = await axios.post("http://localhost:3002/computer", { name, email })
+            dispatch({
+                type: "NEW_POST",
+                payload: data
+            })
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
+}
+
+export default getBookings
