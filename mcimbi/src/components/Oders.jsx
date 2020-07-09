@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import getBookings from './Bookings';
+import {getBookings} from './Bookings';
 import postReducer from '../reducer/postReducer';
 
 

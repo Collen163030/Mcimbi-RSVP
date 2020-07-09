@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import {addBooking, getBookings} from './Bookings'
 
 
 class Form extends Component {
@@ -10,8 +12,27 @@ class Form extends Component {
             surname: ""
         }
     }
-    onSubmit = () => {
-        
+    onSubmit = (name, email) => {
+        const { items } = this.props
+    for (var i in items) {
+      if (items[i].name === name) {
+        return alert("name already exists")
+      } else if (items[i].email === name) {
+        return this.state.email
+      }
+      if (this.state.name <= 0) {
+        return alert("Please enter names")
+      }
+    }
+    this.props.addBooking(this.state)
+    this.setState({
+      ...this.state,
+      name: "",
+      email: ""
+    
+    })
+    this.props.getBookings()
+
         console.log("I'm state", this.state)
     }
     onChange = (e) => {
@@ -59,8 +80,17 @@ class Form extends Component {
     }
 }
 
-Form.propTypes = {
+const mapStateToProps = (state) => ({
+    items: state.bookings.items,
+})
 
-};
+const mapDispatchToProps = dispatch => ({   
+    addBooking: (name, email) => {
+        dispatch(addBooking(name, email))
+    },  
+    getBookings: () => {
+        dispatch(getBookings())
+    }  
+})
 
-export default Form;
+export default connect(mapStateToProps, mapDispatchToProps)(Form);
