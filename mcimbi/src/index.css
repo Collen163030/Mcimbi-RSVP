@@ -192,8 +192,15 @@ ul{
 .Form-container{
   margin: 10vh 0px 0px 12vh;
 }
+.Form-container>label{
+  margin-left: 10vh;
+}
+.Form-container>input{
+  font-size: medium;
+  margin: 10px;
+}
 .Submit {
-  margin: 5vh 0px 0px 20vh;
+  margin: 1vh 0px 0px 20vh;
 }
 
 .Freestate-form{
@@ -211,3 +218,6 @@ ul{
 .Cherry-form{
   margin: -50vh 0px 0vh 100vh;
 }
+
+/* Random classes */
+

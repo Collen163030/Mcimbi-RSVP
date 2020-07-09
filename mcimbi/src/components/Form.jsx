@@ -11,23 +11,23 @@ class Form extends Component {
             surname: ""
         }
     }
-    onSubmit = () => {
-
-        console.log("I'm state", this.state)
+    onSubmit = (e) => {
+        if([e.target.name] === ""){
+            alert("Input field is required")
+        }else{
+            console.log("I'm state", this.state)
+        }
     }
     onChange = (e) => {
-        this.setState({
-            name: e.target.value,
-            surname: e.target.value,
-            email: e.target.value
-        })
+        
+        this.setState({[e.target.name]: e.target.value})
     }
 
     handleBack = () => {
         window.location.reload();
     }
     render() {
-        // const {info}=this.state
+        const {email, name, surname}=this.state
         return (
             <div className="form" >
                 <button onClick={this.handleBack}>
@@ -36,17 +36,23 @@ class Form extends Component {
                 <p>Kindly fill in the form to book your space:</p>
                 <form className="Form-container" >
                     <br />
+                    <label>Name</label><br/>
                     <input type="text" name="name" id="name" placeholder="First Name"
                         onChange={this.onChange}
+                    value={name}
                     />
                     <br />
+                    <label>Surname</label><br/>
                     <input type="text" name="surname" id="surname" placeholder="Surname"
                         onChange={this.onChange}
+                    value={surname}
                     />
                     <br />
+                    <label>Email</label><br/>
                     <input type="email" name="email" id="email" placeholder="email"
                         onChange={this.onChange}
-                    />
+                    value={email}
+/>
                     <br />
                 </form>
                 <button onClick={this.onSubmit} className="Submit">
