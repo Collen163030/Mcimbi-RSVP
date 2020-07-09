@@ -7,9 +7,9 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: "",
-            name: "",
-            surname: ""
+            email: "kjdkfjd",
+            name: "dafasdf",
+            surname: "fadfadf"
         }
     }
     onSubmit = (name, email) => {
@@ -28,8 +28,8 @@ class Form extends Component {
     this.setState({
       ...this.state,
       name: "",
-      email: ""
-    
+      email: "",
+      surname: ""
     })
     this.props.getBookings()
 

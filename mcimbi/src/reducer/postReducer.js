@@ -13,7 +13,7 @@ export default function (state = initialState, action) {
             };
         }
         case NEW_POST: {
-            const newState = {items: [...state.items, {name: action.payload.name, id: action.payload.id}]}
+            const newState = {items: [...state.items, action.payload.name]}
             return newState;
         }
         default:

@@ -23,7 +23,7 @@ export const addBooking = (name, email) => {
     return async dispatch => {
         try {
             console.log("adding", name, email)
-            const data = await axios.post("https://jsonplaceholder.typicode.com/users", { name, email })
+            const {data} = await axios.post("https://jsonplaceholder.typicode.com/users",  {name, email} )
             dispatch({
                 type: "NEW_POST",
                 payload: data
