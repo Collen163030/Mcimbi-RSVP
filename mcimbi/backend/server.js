@@ -5,10 +5,11 @@ const bodyParser = require('body-parser');
 const cors = require('cors')
 require('dotenv').config()
 
-
+const {test} = require('./routes/testRoute')
 
 app.use(bodyParser.json())
 app.use(cors())
+test(app);
 
 
 mongoose.connect(process.env.backendURL, 
