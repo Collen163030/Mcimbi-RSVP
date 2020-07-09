@@ -5,7 +5,7 @@ export const getBookings = () => {
     return async dispatch => {
         try {
 
-            const data = await axios.get("https://jsonplaceholder.typicode.com/users");
+            const data = await axios.get("http://localhost:3002/test");
             const bookings = await data;
 
             dispatch({
@@ -23,7 +23,7 @@ export const addBooking = (name, email) => {
     return async dispatch => {
         try {
             console.log("adding", name, email)
-            const {data} = await axios.post("https://jsonplaceholder.typicode.com/users",  {name, email} )
+            const {data} = await axios.post("http://localhost:3002/test",  {name, email} )
             dispatch({
                 type: "NEW_POST",
                 payload: data
