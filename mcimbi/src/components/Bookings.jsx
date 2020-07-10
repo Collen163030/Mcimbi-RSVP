@@ -7,7 +7,6 @@ export const getBookings = () => {
 
             const data = await axios.get("http://localhost:3002/test");
             const bookings = await data;
-
             dispatch({
                 type: "FETCH_POSTS",
                 payload: [...bookings.data]
@@ -19,13 +18,13 @@ export const getBookings = () => {
     }
 }
 
-export const addBooking = (name, email) => {
+export const addBooking = (name, surname, email) => {
     return async dispatch => {
         try {
-            console.log("adding", name, email)
-            const {data} = await axios.post("http://localhost:3002/test",  {name, email} )
+            console.log("adding from action", name, surname, email)
+            const {data} = await axios.post("http://localhost:3002/test",  {name, surname, email} )
             dispatch({
-                type: "NEW_POST",
+                type: NEW_POST,
                 payload: data
             })
         }
