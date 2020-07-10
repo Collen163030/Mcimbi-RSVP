@@ -34,4 +34,3 @@ export const addBooking = (name, surname, email) => {
     }
 }
 
-// export default {getBookings}

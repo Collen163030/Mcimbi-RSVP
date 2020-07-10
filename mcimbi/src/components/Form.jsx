@@ -16,10 +16,9 @@ class Form extends Component {
         const { items } = this.props
         for (var i in items) {
             if (items[i].name === name) {
-                return alert("name already exists")
-            } else if (items[i].email === name) {
-                return this.state.email
+                return alert("Oops the name is taken.. try a different one")
             }
+        }
             if (this.state.name <= 0) {
                 return alert("Please enter name")
             }
@@ -29,7 +28,6 @@ class Form extends Component {
             if(this.state.email <= 0){
                 return alert("Please enter email address")
             }
-        }
         this.props.addBooking(name, email, surname)
         this.setState({
             ...this.state,
@@ -39,7 +37,6 @@ class Form extends Component {
         })
         this.props.getBookings()
 
-        console.log("I'm state", this.state)
     }
     onChange = (e) => {
 
@@ -94,7 +91,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => ({
     addBooking: (name, surname, email) => {
-        console.log("dispatchToProps", addBooking(name, surname, email))
         dispatch(addBooking(name, surname, email))
     },
     getBookings: () => {
