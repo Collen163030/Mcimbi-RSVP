@@ -7,9 +7,9 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: "kjdkfjd",
-            name: "dafasdf",
-            surname: "fadfadf"
+            email: "",
+            name: "",
+            surname: ""
         }
     }
     onSubmit = (name, email, surname) => {
@@ -21,7 +21,13 @@ class Form extends Component {
                 return this.state.email
             }
             if (this.state.name <= 0) {
-                return alert("Please enter names")
+                return alert("Please enter name")
+            }
+            if(this.state.surname <= 0){
+                return alert("Please enter surname")
+            }
+            if(this.state.email <= 0){
+                return alert("Please enter email address")
             }
         }
         this.props.addBooking(name, email, surname)
@@ -33,7 +39,7 @@ class Form extends Component {
         })
         this.props.getBookings()
 
-        console.log("I'm state",this.state)
+        console.log("I'm state", this.state)
     }
     onChange = (e) => {
 
@@ -70,6 +76,7 @@ class Form extends Component {
                     <input type="email" name="email" id="email" placeholder="email"
                         onChange={this.onChange}
                         value={email}
+                        aria-describedby="emailHelp"
                     />
                     <br />
                 </form>
