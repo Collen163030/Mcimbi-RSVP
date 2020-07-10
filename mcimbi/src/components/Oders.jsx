@@ -19,15 +19,11 @@ class Oders extends Component {
         console.log("I'm filtered Items", filteredItems)
         return (
             <div>
-                <h1>Posts</h1>
                 {filteredItems.map(item =>
-                    <div key={item.id}>
-                        <div>
-                            
-                            <label>Name:</label><strong>{item.name}</strong><br />
-                            <label>{item.surname}</label><br/>
+                    <div key={item.id}>   
+                            <strong>{item.name}  {item.surname}</strong><br />
+                            <label><strong>{item.event}</strong></label><br/>
                             <label>{item.email}</label><br/>
-                        </div>
                     </div>
                 )}
             </div>

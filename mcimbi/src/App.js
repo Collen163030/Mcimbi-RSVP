@@ -15,7 +15,10 @@ function App() {
           <h1>MCIMBI RSVP</h1>
         </header>
         <Events />
-        <Orders />
+        <div className="Get-Bookings">
+          <h1>Bookings</h1>
+          <Orders />
+        </div>
       </div>
     </Provider>
   );

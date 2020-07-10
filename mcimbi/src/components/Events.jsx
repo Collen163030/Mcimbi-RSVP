@@ -133,7 +133,7 @@ class Events extends Component {
                                     <br />
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQlrvFZmlBKYj_MnGmTZe1qVSzMafyyJ_xl1w&usqp=CAU"
                                         alt="logo" className="cherry-3" />
-                                        <p className="Cherry-discription">The whole of November FreeState click for bookings</p>
+                                    <p className="Cherry-discription">The whole of November FreeState click for bookings</p>
                                 </div>
                             </div> : <div className="Cherry-form"><Form /></div>}
                     </div>

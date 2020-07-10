@@ -14,7 +14,7 @@ export default function (state = initialState, action) {
         }
         case NEW_POST: {
             const newState = {items: [...state.items, {id: action.payload.id, name: action.payload.name,
-            surname: action.payload.surname, email: action.payload.email}]}
+            surname: action.payload.surname, email: action.payload.email, event: action.payload.event}]}
             return newState;
         }
         default:

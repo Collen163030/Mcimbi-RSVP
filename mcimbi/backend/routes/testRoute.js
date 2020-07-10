@@ -13,7 +13,8 @@ const test = (app) => {
                     id: booking.id,
                     name: booking.name,
                     surname: booking.surname,
-                    email: booking.email
+                    email: booking.email,
+                    event: booking.event
                 }
             })
             res.status(201).json(results)
@@ -50,7 +51,8 @@ const test = (app) => {
         var newBooking = new testModel({
             name: req.body.name,
             surname: req.body.surname,
-            email: req.body.email
+            email: req.body.email,
+            event: req.body.event,
         })
         try{
             const dbResults = await newBooking.save();
@@ -59,7 +61,8 @@ const test = (app) => {
                 id: dbResults.id,
                 name: dbResults.name,
                 surname: dbResults.surname,
-                email: dbResults.email
+                email: dbResults.email,
+                event: dbResults.event,
             }
             res.send(sanitizedBooking)
 

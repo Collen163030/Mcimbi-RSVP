@@ -9,10 +9,11 @@ class Form extends Component {
         this.state = {
             email: "",
             name: "",
-            surname: ""
+            surname: "",
+            event: ""
         }
     }
-    onSubmit = (name, email, surname) => {
+    onSubmit = (name, email, surname, event) => {
         const { items } = this.props
         for (var i in items) {
             if (items[i].name === name) {
@@ -28,18 +29,21 @@ class Form extends Component {
             if(this.state.email <= 0){
                 return alert("Please enter email address")
             }
-        this.props.addBooking(name, email, surname)
+            if(this.state.event <=0){
+                return alert("Please enter an event")
+            }
+        this.props.addBooking(name, email, surname, event)
         this.setState({
             ...this.state,
             name: "",
             email: "",
-            surname: ""
+            surname: "",
+            event: ""
         })
         this.props.getBookings()
 
     }
     onChange = (e) => {
-
         this.setState({ [e.target.name]: e.target.value })
     }
 
@@ -48,7 +52,7 @@ class Form extends Component {
     }
 
     render() {
-        const { email, name, surname } = this.state
+        const { email, name, surname, event } = this.state
         return (
             <div className="form" >
                 <button onClick={this.handleBack}>
@@ -76,8 +80,10 @@ class Form extends Component {
                         aria-describedby="emailHelp"
                     />
                     <br />
+                    <input type="text" name="event" id="event" placeholder="Event name"
+                    onChange={this.onChange} value={event}/>
                 </form>
-                <button onClick={() => this.onSubmit(name, surname, email)} className="Submit">
+                <button onClick={() => this.onSubmit(name, surname, email, event)} className="Submit">
                     <i class="fa fa-send-o">Sumbit</i>
                 </button>
             </div>
@@ -90,8 +96,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    addBooking: (name, surname, email) => {
-        dispatch(addBooking(name, surname, email))
+    addBooking: (name, surname, email, event) => {
+        dispatch(addBooking(name, surname, email, event))
     },
     getBookings: () => {
         dispatch(getBookings())

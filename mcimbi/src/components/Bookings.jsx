@@ -18,11 +18,11 @@ export const getBookings = () => {
     }
 }
 
-export const addBooking = (name, surname, email) => {
+export const addBooking = (name, surname, email, event) => {
     return async dispatch => {
         try {
-            console.log("adding from action", name, surname, email)
-            const {data} = await axios.post("http://localhost:3002/test",  {name, surname, email} )
+            console.log("adding from action", name, surname, email, event)
+            const {data} = await axios.post("http://localhost:3002/test",  {name, surname, email, event} )
             dispatch({
                 type: NEW_POST,
                 payload: data
