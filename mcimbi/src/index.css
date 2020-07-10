@@ -221,5 +221,17 @@ ul{
 
 /* Random classes */
 .Get-Bookings{
-  padding-top: 40vh;
+  padding-top: 10vh;
+}
+.Get-Bookings>h1{
+  text-align: center;
+  margin-right: 155vh;
+}
+.Ticket-container{
+  padding: 10px;
+  margin-right: 155vh;
+}
+.Ticket-wrapper{
+  padding: 10px;
+  text-align: center;
 }

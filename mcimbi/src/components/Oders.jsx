@@ -11,21 +11,20 @@ class Oders extends Component {
     }
     componentWillMount() {
         this.props.getBookings();
-        console.log("items", this.props.items)
     }
 
     render() {
         let filteredItems = this.props.items
         console.log("I'm filtered Items", filteredItems)
         return (
-            <div>
+            <div className="Ticket-container">
                 {filteredItems.map(item =>
-                    <div key={item.id}>   
-                            <strong>{item.name}  {item.surname}</strong><br />
-                            <label><strong>{item.event}</strong></label><br/>
-                            <label>{item.email}</label><br/>
+                    <div key={item.id} className="Ticket-wrapper">
+                            <strong><label>{item.name}  {item.surname}</label></strong><br />
+                           <label><strong>{item.event}</strong>: {item.email}</label>
                     </div>
                 )}
+    
             </div>
         );
     }
