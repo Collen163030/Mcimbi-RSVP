@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Collen163030/Mcimbi-RSVP/tree/master/mcimbi/mcimbi-app",
+  "homepage": "https://collen163030.github.io/Mcimbi-RSVP/",
   "name": "mcimbi-app",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
