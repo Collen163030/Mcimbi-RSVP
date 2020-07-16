@@ -16,8 +16,8 @@ function App() {
         </header>
         <Events />
         <div className="Get-Bookings">
-          <h1>Bookings</h1>
-          <Orders />
+          {/* <h1>Bookings</h1>
+          <Orders /> */}
         </div>
       </div>
     </Provider>
